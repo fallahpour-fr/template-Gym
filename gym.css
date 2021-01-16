@@ -15,7 +15,6 @@ body {
     max-width: 1540px;
     width: 100%;
     height: 100%;
-    display: flex;
 }
 
 header {
@@ -34,7 +33,7 @@ header {
     height: 80px;
 }
 
-.navbar::after{
+.navbar::after {
     content: "";
     display: block;
     background-color: rgba(212, 211, 211, 0.349);
@@ -118,8 +117,8 @@ header {
     transition: .2s;
     width: 180px;
     cursor: pointer;
-   float: left;
-   margin:30px 7%;
+    float: left;
+    margin: 30px 7%;
 }
 
 .logo:hover {
@@ -162,16 +161,83 @@ header {
     cursor: pointer;
 }
 
-.btn_one.right{
-background-color:#15b48a;
-color: #fff;
-transition: 0.2s;
-} 
-.btn_one.right:hover{
-    background-color:#149e79 ;
+.btn_one.right {
+    background-color: #15b48a;
+    color: #fff;
     transition: 0.2s;
 }
-.btn_one.left{
+
+.btn_one.right:hover {
+    background-color: #149e79;
+    transition: 0.2s;
+}
+
+.btn_one.left {
     color: rgb(12, 12, 12);
 }
+
 /*.....................................................................section one.........................................................................*/
+.section_one {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+
+.title_section_one {
+    margin-top: 160px;
+    flex: 100%;
+}
+
+.title_section_one h1 {
+    font-size: 120%;
+    text-align: center;
+    letter-spacing: 3px;
+    word-spacing: 2px;
+    font-weight: 400;
+}
+
+.title_section_one h2 {
+    line-height: 35px;
+    margin-top: 50px;
+    font-size: 80%;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: 500;
+    color: rgb(139, 139, 139);
+}
+
+/*......................................................................................................................................*/
+.section_one_boxes { 
+    flex: 100%;    
+}
+
+ .boxes {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 20px;
+} 
+
+.box {
+    background-color: #f1f2f6;    
+    text-align: center;
+    width: 400px;
+    margin: 10px;
+    padding: 30px 20px;
+}
+
+.box i {
+    padding: 25px;
+    margin: 10px;
+    background-color:#fff;
+    border-radius: 60px;
+    font-size: 170%;
+}
+
+.box h4 {
+    margin: 20px;
+}
