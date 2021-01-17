@@ -11,6 +11,11 @@ body {
     font-size: 20px;
 }
 
+.row {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
 .parent {
     max-width: 1540px;
     width: 100%;
@@ -19,10 +24,10 @@ body {
 
 header {
     background-image: linear-gradient(rgba(32, 31, 31, 0.322), rgba(0, 0, 0, 0.863)), url(./img/img_20310546.jpg);
+    background-attachment: fixed;
     background-size: cover;
     width: 100%;
     height: 98%;
-    background-color: rgba(36, 34, 34, 0.24);
     color: white;
 }
 
@@ -182,16 +187,16 @@ header {
     height: 100%;
     display: flex;
     flex-direction: column;
-    
+
 }
 
-
-.title_section_one {
-    margin-top: 160px;
+/*..........................................title....................................................*/
+.section_one_title {
+    margin-top: 120px;
     flex: 100%;
 }
 
-.title_section_one h1 {
+.section_one_title h1 {
     font-size: 120%;
     text-align: center;
     letter-spacing: 3px;
@@ -199,7 +204,7 @@ header {
     font-weight: 400;
 }
 
-.title_section_one h2 {
+.section_one_title h2 {
     line-height: 35px;
     margin-top: 50px;
     font-size: 80%;
@@ -209,21 +214,22 @@ header {
     color: rgb(139, 139, 139);
 }
 
-/*......................................................................................................................................*/
-.section_one_boxes { 
-    flex: 100%;    
+/*.............................................boxes........................................................*/
+
+.section_one_boxes {
+    flex: 100%;
 }
 
- .boxes {
+.boxes {
     display: flex;
     flex-wrap: nowrap;
     flex-direction: row;
     justify-content: center;
-    margin-bottom: 20px;
-} 
+    margin-bottom: 40px;
+}
 
 .box {
-    background-color: #f1f2f6;    
+    background-color: #f1f2f6;
     text-align: center;
     width: 400px;
     margin: 10px;
@@ -233,7 +239,7 @@ header {
 .box i {
     padding: 25px;
     margin: 10px;
-    background-color:#fff;
+    background-color: #fff;
     border-radius: 60px;
     font-size: 170%;
 }
@@ -241,3 +247,64 @@ header {
 .box h4 {
     margin: 20px;
 }
+
+/*......................................................................section two ..................................................................................*/
+.section_two {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background-color: #f1f2f6;
+}
+
+.part {
+    display: inherit;
+}
+
+.text_part {
+    width: 50%;
+    font-size: 80%;
+    margin: 20px 0px;
+}
+
+.image_part {
+    width: 50%;
+}
+
+.text {
+    display: flex;
+    margin: 10% 0px;
+    padding: 10px 20px;
+    word-spacing: 2px;
+}
+
+.text img {
+    margin-right: 20px;
+}
+
+.text_container h4 {
+    font-size: 110%;
+    margin-bottom: 20px;
+}
+
+.text_container p {
+    font-weight: 400;
+    color: rgb(139, 139, 139);
+}
+
+.textt {
+    padding: 10px;
+    margin: 10px 10px 10% 10px;
+    font-weight: 500;
+    word-spacing: 2px;
+    color: rgb(139, 139, 139);
+}
+
+.textt h3 {
+    color: black;
+    font-size: 170%;
+    font-weight: 500;
+    margin-bottom: 10%;
+    word-spacing: 5px;
+}
+
+/*.....................................................................section three...........................................................................*/
