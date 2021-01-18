@@ -184,7 +184,6 @@ header {
 /*.....................................................................section one.........................................................................*/
 .section_one {
     width: 100%;
-    height: 100%;
     display: flex;
     flex-direction: column;
 
@@ -251,7 +250,6 @@ header {
 /*......................................................................section two ..................................................................................*/
 .section_two {
     width: 100%;
-    height: 100%;
     display: flex;
     background-color: #f1f2f6;
 }
@@ -308,3 +306,87 @@ header {
 }
 
 /*.....................................................................section three...........................................................................*/
+.section_three {
+    width: 100%;
+    padding: 2px;
+}
+
+.section_three_text {
+    text-align: center;
+    padding: 2px;
+    margin: 85px 0px;
+}
+
+.section_three_text h3 {
+    margin-bottom: 50px;
+    font-weight: 450;
+    letter-spacing: 2px;
+}
+
+.section_three_text p {
+    font-size: 85%;
+    line-height: 30px;
+}
+
+.section_three_image {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+
+.section_three_images {
+    width: 25%;
+    padding: 10px;
+
+}
+
+.section_three_images img {
+    width: 100%;
+}
+
+.images_text {
+    text-align: center;
+}
+
+.images_text h5 {
+    margin-top: 30px;
+    margin-bottom: 7px;
+    font-size: 62%;
+    letter-spacing: 1px;
+}
+
+.images_text h4 {
+    font-size: 140%;
+    font-weight: 400;
+}
+
+.images_text h5::after {
+    content: "";
+    display: block;
+    height: 3px;
+    width: 60px;
+    background-color:rgb(138, 137, 137);
+    text-align: center;
+    margin: 7px 40%;
+}
+
+.images_icons {
+    list-style-type: none;
+    padding: 15% 0px;
+}
+
+.images_icons li {
+    display: inline-block;
+    border: 1px solid rgb(189, 189, 189);
+    padding: 13px;
+    border-radius: 50%;
+    transition: 0.3s;
+}
+
+.images_icons li:hover {
+    background-color: #149e79;
+}
+
+.images_icons i {
+    color:rgb(189, 189, 189) ;
+}
