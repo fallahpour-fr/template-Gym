@@ -248,6 +248,10 @@ header {
     border-radius: 60px;
     font-size: 170%;
 }
+.box i:hover{
+    color:#2bb490;
+    transition: 0.5s;
+}
 
 .box h4 {
     margin: 20px;
@@ -487,7 +491,7 @@ header {
 }
 
 .section_six_boxes_content {
-    border: 1px solid rgb(175, 175, 175);
+    border: 1px solid rgb(216, 215, 215);
     margin: 10px;
     width: 800px;
 }
@@ -515,6 +519,7 @@ header {
     background-color: rgba(2, 2, 2, 0.767);
     transition: 0.5s;
 }
+
 .images:hover #button_inside_image {
     display: inline-block;
 }
@@ -586,4 +591,113 @@ header {
 
 .comment a:hover {
     color: black;
+}
+
+/*.........................................................................footer part .................................................................................*/
+footer {
+    padding: 1px;
+    background-color:#2a2f36;
+    width: 100%;
+}
+
+/*.............................................................................................*/
+.first_part {
+    display: flex;
+}
+
+.first_partt {
+    display: flex;
+    width: 33.33%;
+    padding: 40px 50px;
+    color: white;
+}
+
+.first_partt i {
+    font-size: 400%;
+    padding: 0px 10px;
+}
+
+.some_texes {
+    font-size: 80%;
+}
+
+#one {
+    background-color: #2bb490;
+}
+
+.some_texes>h5 {
+    color: #27836a;
+}
+
+#one>i {
+    color: #27836a;
+}
+
+#two {
+    background-color: #27836a;
+}
+
+#h5 {
+    color: #2bb490;
+}
+
+#two>i {
+    color: #2bb490;
+}
+
+/*.............................................................................................*/
+
+.second_part_center_images{
+    padding: 2% 40%;
+    text-align: center;
+    color: #fff;
+}
+.second_part_center_images h2{
+    line-height: 70px;
+    font-size: 170%;
+}
+.second_part_center_images img{
+    width: 100%;
+}
+.links{
+    list-style-type: none;
+    text-align: center;
+    padding: 1px;
+    font-weight: 600;
+    font-size: 80%;
+    color: rgb(104, 104, 104);
+}
+.links li{
+    display: inline-block;
+}
+.links a{
+    color: rgb(104, 104, 104);
+    text-decoration: none;
+}
+.links a:hover{
+    color: #2bb490;    
+}
+.footer_icons{
+    text-align: center;
+    padding: 30px;
+}
+.footer_icons li{
+    list-style: none;
+    display: inline-block;
+    padding: 13px;
+    background-color: #212429;
+}
+.footer_icons li:hover{
+    background-color:#2bb490 ;
+}
+.footer_icons i{
+    color: rgb(104, 104, 104);
+}
+.third_part{
+    padding: 15px;
+    background-color:#212429 ;
+    font-size: 60%;
+    text-align: center;
+    font-weight: 600;
+    color: rgb(104, 104, 104)
 }
