@@ -40,16 +40,14 @@ header {
     height: 80px;
 }
 
-/* .navbar::after{   
-    content: "";
+.navbar_line{
     display: block;
-    height: 3px;
-    width: 60px;
-    background-color:rgb(138, 137, 137);
+    height: 1px;
+    widows: 100%;
+    background-color:rgba(138, 137, 137, 0.575);
     text-align: center;
-    margin: 7px 40%;
-} */
-
+    margin: 5px 0px;
+}
 
 .navbar_icons {
     float: right;
@@ -241,6 +239,10 @@ header {
     padding: 30px 20px;
 }
 
+.box p{
+  color:rgb(139, 139, 139);
+}
+
 .box i {
     padding: 25px;
     margin: 10px;
@@ -407,7 +409,6 @@ header {
     background-attachment: fixed;
     background-size: cover;
     width: 100%;
-    height: 100vh;
     padding: 1px;
 }
 
@@ -452,6 +453,9 @@ header {
     color: rgb(139, 139, 139);
 }
 
+.section_four_boxes{
+    margin-bottom: 10%;
+}
 /*.....................................................................section five ...................................................................................*/
 .section_five {
     width: 100%;
@@ -769,4 +773,62 @@ footer {
 .button_of_pricing button:hover{
     background-color:#149e79;
     
+}
+/*...............................................................subscrib.....................................................................................*/
+.subscribe{
+    display: flex;
+    background-color: #f0f0f0e3;
+    padding:4% 0px;
+    font-weight: 500;
+}
+form{
+    width: 70%;
+    display: flex;
+    padding: 7px; 
+    background-color: #fff;  
+}
+input{
+   width: 100%;
+    border: none;
+}
+input:focus{
+    outline: 0px;
+}
+form>button {
+    padding: 10px 20px;
+    border:1px solid #15b48a;
+    border-radius: 5px;
+    color:white;
+    background-color: #15b48a;
+  }
+  .subscribe_one{
+      width: 50%;
+  }
+  #subscripte_id{
+      line-height: 35px;
+    font-size: 70%;
+    padding: 10px;
+  }
+  #subscripte_id>h2{
+      margin-left: 20%;
+      color: rgb(59, 59, 59);
+      letter-spacing: 1px;
+  }
+  #subscripte_id>p{
+    margin-left: 20%;
+    color:  rgb(139, 139, 139);
+}
+#exetra{
+    padding: 20px 0px;
+    display: flex;
+}
+#exetra>p{
+margin-left: 5px;
+font-size: 70%;
+font-weight: 500;
+color:  rgb(139, 139, 139);
+}
+#exetra>button{
+    font-size: 70%;
+    padding: 8px;
 }
