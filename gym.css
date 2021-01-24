@@ -43,19 +43,19 @@ header {
     flex-wrap: nowrap;
 }
 
-.navbar_line{
+.navbar_line {
     display: block;
     height: 1px;
     width: 100%;
-    background-color:rgba(138, 137, 137, 0.575);
+    background-color: rgba(138, 137, 137, 0.575);
     text-align: center;
     margin: 5px 0px;
 }
 
 .navbar_icons {
     list-style-type: none;
-    padding: 1px;  
-    display: flex;  
+    padding: 1px;
+    display: flex;
     margin-top: 25px;
     margin-right: 7%;
 }
@@ -238,8 +238,8 @@ header {
     padding: 30px 20px;
 }
 
-.box p{
-  color:rgb(139, 139, 139);
+.box p {
+    color: rgb(139, 139, 139);
 }
 
 .box i {
@@ -249,8 +249,9 @@ header {
     border-radius: 60px;
     font-size: 170%;
 }
-.box i:hover{
-    color:#2bb490;
+
+.box i:hover {
+    color: #2bb490;
     transition: 0.5s;
 }
 
@@ -452,9 +453,10 @@ header {
     color: rgb(139, 139, 139);
 }
 
-.section_four_boxes{
+.section_four_boxes {
     margin-bottom: 10%;
 }
+
 /*.....................................................................section five ...................................................................................*/
 .section_five {
     width: 100%;
@@ -596,8 +598,8 @@ header {
 
 /*.........................................................................footer part .................................................................................*/
 footer {
-    
-    background-color:#2a2f36;
+
+    background-color: #2a2f36;
     width: 100%;
 }
 
@@ -648,19 +650,22 @@ footer {
 
 /*.............................................................................................*/
 
-.second_part_center_images{
+.second_part_center_images {
     padding: 2% 40%;
     text-align: center;
     color: #fff;
 }
-.second_part_center_images h2{
+
+.second_part_center_images h2 {
     line-height: 70px;
     font-size: 170%;
 }
-.second_part_center_images img{
+
+.second_part_center_images img {
     width: 100%;
 }
-.links{
+
+.links {
     list-style-type: none;
     text-align: center;
     padding: 1px;
@@ -668,45 +673,55 @@ footer {
     font-size: 80%;
     color: rgb(104, 104, 104);
 }
-.links li{
+
+.links li {
     display: inline-block;
 }
-.links a{
+
+.links a {
     color: rgb(104, 104, 104);
     text-decoration: none;
 }
-.links a:hover{
-    color: #2bb490;    
+
+.links a:hover {
+    color: #2bb490;
 }
-.footer_icons{
+
+.footer_icons {
     text-align: center;
     padding: 30px;
 }
-.footer_icons li{
+
+.footer_icons li {
     list-style: none;
     display: inline-block;
     padding: 13px;
     background-color: #212429;
 }
-.footer_icons li:hover{
-    background-color:#2bb490 ;
+
+.footer_icons li:hover {
+    background-color: #2bb490;
 }
-.footer_icons i{
+
+.footer_icons i {
     color: rgb(104, 104, 104);
 }
-.third_part{
+
+.third_part {
     padding: 15px;
-    background-color:#212429 ;
+    background-color: #212429;
     font-size: 60%;
     text-align: center;
     font-weight: 600;
-    color: rgb(104, 104, 104)
+    color: rgb(104, 104, 104);
 }
+
 /*..................................................................pricing section ...............................................................................*/
 .pricing_section {
     width: 100%;
     padding: 1px;
 }
+
 .pricing_section_text {
     text-align: center;
     color: rgb(0, 0, 0);
@@ -726,109 +741,152 @@ footer {
     color: rgb(139, 139, 139);
 }
 
-.pricing_section_boxes{
+.pricing_section_boxes {
     display: flex;
     padding-bottom: 5%;
 }
-.pricing_section_box{
+
+.pricing_section_box {
     width: 30%;
     text-align: center;
     border: 1px solid rgb(216, 215, 215);
     margin: 10px;
 }
-.pricing_section_box h2{
+
+.pricing_section_box h2 {
     padding: 23px;
     font-size: 120%;
     color: #444;
 }
-.header_of_pricing{
-    color:rgb(139, 139, 139);
+
+.header_of_pricing {
+    color: rgb(139, 139, 139);
     font-weight: 500;
     padding: 30px;
     border-bottom: 0.5px solid rgb(216, 215, 215);
     border-top: 0.5px solid rgb(216, 215, 215);
     background-color: #fafafa;
 }
-.texes_of_pricing{
+
+.texes_of_pricing {
     background-color: #fff;
     padding: 40px;
     line-height: 40px;
     font-size: 80%;
     color: rgb(139, 139, 139);
 }
-.button_of_pricing{
+
+.button_of_pricing {
     padding: 20px;
-    border-bottom: 0.5px solid rgb(216, 215, 215);
     border-top: 0.5px solid rgb(216, 215, 215);
 }
-.button_of_pricing button{
+
+.button_of_pricing>button {
     padding: 13px;
     border: none;
     color: #fff;
-    background-color:#15b48a;
+    background-color: #15b48a;
     transition: 0.5s;
     cursor: pointer;
 }
-.button_of_pricing button:hover{
-    background-color:#149e79;
-    
+
+.button_of_pricing>button:hover {
+    background-color: #149e79;
+    transition: 0.5s;
 }
+
 /*...............................................................subscrib.....................................................................................*/
-.subscribe{
-    display: flex;
-    background-color: #f0f0f0e3;
-    padding:4% 0px;
-    font-weight: 500;
+.section_subscribe{
+    margin: 30px 0px;
+    padding: 6% 1px;
+    width: 100%;
+    background-color: #fafafa;
 }
-form{
-    width: 70%;
+
+form {
     display: flex;
-    padding: 7px; 
-    background-color: #fff;  
+    align-content: center;
 }
-input{
-   width: 100%;
+
+.input_in_form {
     border: none;
+    width: 100%;
+    height: 40px;
 }
-input:focus{
-    outline: 0px;
-}
+
 form>button {
-    padding: 10px 20px;
-    border:1px solid #15b48a;
-    border-radius: 5px;
-    color:white;
-    background-color: #15b48a;
-  }
-  .subscribe_one{
-      width: 50%;
-  }
-  #subscripte_id{
-      line-height: 35px;
-    font-size: 70%;
-    padding: 10px;
-  }
-  #subscripte_id>h2{
-      margin-left: 20%;
-      color: rgb(59, 59, 59);
-      letter-spacing: 1px;
-  }
-  #subscripte_id>p{
-    margin-left: 20%;
-    color:  rgb(139, 139, 139);
-}
-#exetra{
-    padding: 20px 0px;
-    display: flex;
-}
-#exetra>p{
-margin-left: 5px;
-font-size: 70%;
-font-weight: 500;
-color:  rgb(139, 139, 139);
-}
-#exetra>button{
-    font-size: 70%;
-    padding: 8px;
+    border: none;
+    padding: 5px 20px;
+    border-radius: 3px;
+    font-size: 15px;
+    background-color:#149e79;
+    color: #fff;
     cursor: pointer;
+}
+
+.subscribe_text {
+    font-size: 80%;
+    line-height: 30px;
+    letter-spacing: 1px;
+    padding: 1px;
+    margin-right: auto;
+}
+.subscribe_text p{
+  color: rgb(104, 104, 104);
+}
+
+.subscribe_form {
+    padding: 10px;
+    width: 570px;
+    background-color:#fff;
+}
+
+.subscribe_checkbox {
+    padding: 1px;
+    font-size: 80%;
+    margin: 5px 15px;
+}
+.subscribe_checkbox>label{
+    color:rgb(104, 104, 104);
+   
+}
+.subscribe {
+    display: flex;
+    justify-content: flex-end;
+}
+/*..........................................................*/
+[type="checkbox"]{
+    opacity: 0;
+}
+
+[type="checkbox"]+label {
+   position: relative;
+}
+[type="checkbox"]+label::before{
+   content: "";
+   width: 18px;
+   height: 18px;
+   margin-right:5px;
+   border-radius: 2px;
+   outline: 2px solid gray;
+   position: absolute;
+   left: -20px;
+   top: 0px;
+   cursor: pointer;
+   font-family: "FontAwesome";
+}
+
+
+[type="checkbox"]:checked+label::before{
+   content: "";
+   width: 18px;
+   height: 18px;
+   outline: 2px solid gray;
+   position: absolute;
+   left: -20px;
+   top: 0px;
+   cursor: pointer;
+   content:"\f00c";
+   color: #149e79;
+   font-size: 20px;
 }
