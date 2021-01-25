@@ -52,6 +52,10 @@ header {
     margin: 5px 0px;
 }
 
+.navbar_menu {
+    display: none;
+}
+
 .navbar_icons {
     list-style-type: none;
     padding: 1px;
@@ -492,6 +496,7 @@ header {
 
 .section_six_boxes {
     display: flex;
+    align-items: baseline;
     padding-bottom: 10%;
 }
 
@@ -499,26 +504,28 @@ header {
     border: 1px solid rgb(216, 215, 215);
     margin: 10px;
     width: 800px;
+    height: 28rem;
 }
 
-.section_six_boxes_content img {
-    width: 100%;
+.images {
+    height: 14rem;
+    transition: 0.5;
+    position: relative;
 }
 
 .section_six_boxes_content_images {
     transition: 0.5s;
-
 }
 
 .section_six_boxes_content_images:hover {
     opacity: 0.8;
-    transition: 0.5s;
 }
 
-.images {
-    transition: 0.5;
-    position: relative;
+.section_six_boxes_content img {
+    width: 100%;
+    height: 100%;
 }
+
 
 /* .images:hover {
     background-color: rgba(2, 2, 2, 0.767);
@@ -532,7 +539,7 @@ header {
     background: white;
     color: rgb(20, 20, 20);
     transition: 0.5s;
-} */
+} 
 #button_inside_image {
     position: absolute;
     left: 50%;
@@ -547,13 +554,14 @@ header {
     border: 1px solid #fff;
     transition: 0.5s;
     display: none;
-}
+}*/
 
 .section_six_some_texes {
-    margin: 30px 20px;
+    padding-top: 20px;
     font-weight: 300;
     text-align: center;
     font-size: 90%;
+    height: 11rem;
 }
 
 .section_six_some_texes a {
@@ -561,6 +569,7 @@ header {
     font-size: 110%;
     text-decoration: none;
     font-weight: 500;
+    transition: 0.5s;
 }
 
 .section_six_some_texes a:hover {
@@ -580,6 +589,8 @@ header {
     color: rgb(139, 139, 139);
     padding: 10px 20px;
     font-size: 80%;
+    height: 3rem;
+
 }
 
 .comment_box .two {
@@ -589,7 +600,7 @@ header {
 .comment a {
     text-decoration: none;
     color: rgb(139, 139, 139);
-    transition: 0.2s;
+    transition: 0.5s;
 }
 
 .comment a:hover {
@@ -747,11 +758,13 @@ footer {
 
 .pricing_section_boxes {
     display: flex;
+    align-items: baseline;
     padding-bottom: 5%;
 }
 
 .pricing_section_box {
     width: 30%;
+    height: 38rem;
     text-align: center;
     border: 1px solid rgb(216, 215, 215);
     margin: 10px;
@@ -777,12 +790,16 @@ footer {
     padding: 40px;
     line-height: 40px;
     font-size: 80%;
+    height: 20rem;
     color: rgb(139, 139, 139);
 }
 
 .button_of_pricing {
-    padding: 20px;
+    width: 100%;
+    background-color: #fff;
+    height: 5rem;
     border-top: 0.5px solid rgb(216, 215, 215);
+    border-bottom: 0.5px solid rgb(216, 215, 215);
 }
 
 .button_of_pricing>button {
@@ -792,13 +809,15 @@ footer {
     transition: 0.5s;
     cursor: pointer;
     width: 150px;
+    margin: 20px;
 }
 
 .button_of_pricing>button:hover {
     background-color: #149e79;
     transition: 0.5s;
 }
-.back_button{
+
+.back_button {
     text-decoration: none;
     color: #fff;
 }
@@ -952,6 +971,253 @@ form>button {
 .back:visited {
     color: gray;
 }
+
 .back:link {
     color: gray;
+}
+
+/*..................................................................media query ........................................................................................*/
+@media only screen and (min-width:1024px)and (max-width:1440px) {
+    .navbar_icons a {
+        padding: 8px 10px;
+        margin: 0px;
+        font-size: 60%;
+    }
+
+    .navbar_link li {
+        margin: 0px 10px;
+        font-size: 60%;
+    }
+
+    .logo {
+        width: 160px;
+        cursor: pointer;
+        margin: 20px auto 20px 7%;
+    }
+
+    .center_part h1 {
+        font-size: 150%;
+    }
+
+    .center_part h2 {
+        font-size: 80%;
+    }
+
+    .btn_one {
+        padding: 20px 40px;
+        font-size: 60%;
+    }
+
+    .boxes_four {
+        width: 50%;
+        margin: 10px;
+        padding: 30px;
+        font-weight: 400;
+        font-size: 70%;
+        border-radius: 10px;
+        background-color: #f1f2f6;
+        color: rgb(139, 139, 139);
+    }
+
+    .button_of_pricing>button {
+        margin: 15px;
+    }
+
+    .subscribe_text {
+        font-size: 70%;
+        line-height: 30px;
+        letter-spacing: 1px;
+        padding: 10px;
+        margin-right: auto;
+    }
+
+    .subscribe_form {
+        padding: 10px;
+        width: 530px;
+        background-color: #fff;
+    }
+
+    .section_six_boxes_content {
+        width: 100%;
+    }
+}
+
+@media only screen and (min-width:768px)and (max-width:1024px) {
+    .navbar {
+        width: 100%;
+        height: 100px;
+    }
+
+    .navbar_link {
+        display: none;
+    }
+
+    .navbar_icons {
+        display: none;
+    }
+
+    .logo {
+        width: 200px;
+        cursor: pointer;
+        margin: 25px auto 25px 7%;
+    }
+
+    .center_part {
+        margin-top: 180px;
+    }
+
+    .center_part h1 {
+        font-size: 210%;
+    }
+
+    .center_part h2 {
+        font-size: 100%;
+    }
+
+    .btn_one {
+        padding: 20px 60px;
+        font-size: 80%;
+    }
+
+    .navbar_menu {
+        display: inline-block;
+        margin-right: 60px;
+        font-size: 80%;
+        font-weight: 600;
+        color: #fff;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+    .navbar_menu>i{
+        margin-right: 10px;
+    }
+
+    .boxes_four {
+        width: 50%;
+        margin: 10px;
+        padding: 30px;
+        font-size: 110%;
+    }
+    .texes_of_pricing {
+        padding: 20px;
+        line-height: 30px;
+        font-size:100%;
+        
+    }
+    .button_of_pricing>button {
+        margin: 15px;
+    }
+
+    .subscribe_text {
+        font-size: 90%;
+        line-height: 30px;
+        letter-spacing: 1px;
+        padding: 20px;
+        margin-right: auto;
+        margin-left: 30px;
+    }
+
+    .subscribe_form {
+        padding: 10px;
+        width: 530px;
+        background-color: #fff;
+    }
+
+    .section_six_boxes_content {
+        width: 100%;
+    }
+    .subscribe_checkbox {
+        font-size: 90%;
+    }
+}
+@media only screen and (min-width:425px)and (max-width:768px){
+    .navbar {
+        width: 100%;
+        height: 200px;
+    }
+
+    .navbar_link {
+        display: none;
+    }
+
+    .navbar_icons {
+        display: none;
+    }
+
+    .logo {
+        width: 700px;
+        cursor: pointer;
+        margin: 25px auto 25px 7%;
+    }
+
+    .center_part {
+        margin-top: 180px;
+    }
+
+    .center_part h1 {
+        font-size: 210%;
+    }
+
+    .center_part h2 {
+        font-size: 100%;
+    }
+
+    .btn_one {
+        padding: 20px 60px;
+        font-size: 80%;
+    }
+
+    .navbar_menu {
+        display: inline-block;
+        margin-right: 60px;
+        font-size: 120%;
+        font-weight: 600;
+        color: #fff;
+        background: none;
+        border: none;
+        cursor: pointer;
+        background-color: aqua;
+    }
+    .navbar_menu>i{
+        margin-right: 10px;
+    }
+
+    .boxes_four {
+        width: 50%;
+        margin: 10px;
+        padding: 30px;
+        font-size: 110%;
+    }
+    .texes_of_pricing {
+        padding: 20px;
+        line-height: 30px;
+        font-size:100%;
+        
+    }
+    .button_of_pricing>button {
+        margin: 15px;
+    }
+
+    .subscribe_text {
+        font-size: 90%;
+        line-height: 30px;
+        letter-spacing: 1px;
+        padding: 20px;
+        margin-right: auto;
+        margin-left: 30px;
+    }
+
+    .subscribe_form {
+        padding: 10px;
+        width: 530px;
+        background-color: #fff;
+    }
+
+    .section_six_boxes_content {
+        width: 100%;
+    }
+    .subscribe_checkbox {
+        font-size: 90%;
+    }
 }
