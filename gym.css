@@ -681,10 +681,12 @@ footer {
 .links a {
     color: rgb(104, 104, 104);
     text-decoration: none;
+    transition: 0.5s;
 }
 
 .links a:hover {
     color: #2bb490;
+
 }
 
 .footer_icons {
@@ -697,10 +699,12 @@ footer {
     display: inline-block;
     padding: 13px;
     background-color: #212429;
+    transition: 0.5s;
 }
 
 .footer_icons li:hover {
     background-color: #2bb490;
+
 }
 
 .footer_icons i {
@@ -784,19 +788,23 @@ footer {
 .button_of_pricing>button {
     padding: 13px;
     border: none;
-    color: #fff;
     background-color: #15b48a;
     transition: 0.5s;
     cursor: pointer;
+    width: 150px;
 }
 
 .button_of_pricing>button:hover {
     background-color: #149e79;
     transition: 0.5s;
 }
+.back_button{
+    text-decoration: none;
+    color: #fff;
+}
 
 /*...............................................................subscrib.....................................................................................*/
-.section_subscribe{
+.section_subscribe {
     margin: 30px 0px;
     padding: 6% 1px;
     width: 100%;
@@ -819,7 +827,7 @@ form>button {
     padding: 5px 20px;
     border-radius: 3px;
     font-size: 15px;
-    background-color:#149e79;
+    background-color: #149e79;
     color: #fff;
     cursor: pointer;
 }
@@ -831,14 +839,15 @@ form>button {
     padding: 1px;
     margin-right: auto;
 }
-.subscribe_text p{
-  color: rgb(104, 104, 104);
+
+.subscribe_text p {
+    color: rgb(104, 104, 104);
 }
 
 .subscribe_form {
     padding: 10px;
     width: 570px;
-    background-color:#fff;
+    background-color: #fff;
 }
 
 .subscribe_checkbox {
@@ -846,49 +855,103 @@ form>button {
     font-size: 80%;
     margin: 5px 15px;
 }
-.subscribe_checkbox>label{
-    color:rgb(104, 104, 104);
-   
+
+.subscribe_checkbox>label {
+    color: rgb(104, 104, 104);
+
 }
+
 .subscribe {
     display: flex;
     justify-content: flex-end;
 }
+
 /*..........................................................*/
-[type="checkbox"]{
+[type="checkbox"] {
     opacity: 0;
 }
 
 [type="checkbox"]+label {
-   position: relative;
-   display: inline-block;
-  
+    position: relative;
+    display: inline-block;
+
 }
-[type="checkbox"]+label::before{
-   content: "";
-   width: 18px;
-   height: 18px;
-   border-radius: 2px;
-   outline: 2px solid gray;
-   position: absolute;
-   left: -30px;
-   top: 0px;
-   margin-right: 5px;
-   cursor: pointer;
-   font-family: "FontAwesome";
+
+[type="checkbox"]+label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    border-radius: 2px;
+    outline: 2px solid gray;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+    margin-right: 5px;
+    cursor: pointer;
+    font-family: "FontAwesome";
 }
 
 
-[type="checkbox"]:checked+label::before{
-   content: "";
-   width: 18px;
-   height: 18px;
-   outline: 2px solid gray;
-   position: absolute;
-   left: -30px;
-   top: 0px;
-   cursor: pointer;
-   content:"\f00c";
-   color: #149e79;
-   font-size: 20px;
+[type="checkbox"]:checked+label::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    outline: 2px solid gray;
+    position: absolute;
+    left: -30px;
+    top: 0px;
+    cursor: pointer;
+    content: "\f00c";
+    color: #149e79;
+    font-size: 20px;
+}
+
+/*.......................................................................fixed part...................................................................................*/
+.fixed_left_part {
+    background-color: #f1f2f6;
+    font-size: 80%;
+    line-height: 50px;
+    width: 250px;
+    height: 95px;
+    padding-left: 20px;
+    border-radius: 5px;
+    font-weight: 300;
+    position: fixed;
+    left: 0;
+    bottom: 50;
+    box-shadow: 2px 2px 10px #a7a8a7a9,
+        -2px -2px 10px #a7a8a7a9;
+}
+
+.fixed_left_part>button {
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    background-color: #45aaf2;
+    color: white;
+}
+
+.fixed_left_part>h4 {
+    color: rgb(104, 104, 104);
+}
+
+/*.................................................fixed button ................................................................*/
+
+.button_back_to_top>button {
+    font-size: 120%;
+    border: none;
+    background: none;
+    padding: 10px;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
+
+.back:visited {
+    color: gray;
+}
+.back:link {
+    color: gray;
 }
