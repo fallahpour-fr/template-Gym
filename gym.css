@@ -861,17 +861,19 @@ form>button {
 
 [type="checkbox"]+label {
    position: relative;
+   display: inline-block;
+  
 }
 [type="checkbox"]+label::before{
    content: "";
    width: 18px;
    height: 18px;
-   margin-right:5px;
    border-radius: 2px;
    outline: 2px solid gray;
    position: absolute;
-   left: -20px;
+   left: -30px;
    top: 0px;
+   margin-right: 5px;
    cursor: pointer;
    font-family: "FontAwesome";
 }
@@ -883,7 +885,7 @@ form>button {
    height: 18px;
    outline: 2px solid gray;
    position: absolute;
-   left: -20px;
+   left: -30px;
    top: 0px;
    cursor: pointer;
    content:"\f00c";
