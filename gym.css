@@ -16,17 +16,12 @@ body {
     margin: 0 auto;
 }
 
-.parent {
-    width: 100%;
-    height: 100%;
-}
-
 header {
     background-image: linear-gradient(rgba(32, 31, 31, 0.322), rgba(0, 0, 0, 0.863)), url(./img/img_20310546.jpg);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
-    height: 98%;
+    height: 44rem;
     color: white;
     padding: 1px;
 }
@@ -36,21 +31,14 @@ header {
     margin: 0px;
     padding: 1px;
     width: 100%;
-    height: 80px;
+    height: 5rem;
     display: flex;
     justify-content: flex-end;
     align-content: center;
     flex-wrap: nowrap;
+    border-bottom: 1px solid gray;
 }
 
-.navbar_line {
-    display: block;
-    height: 1px;
-    width: 100%;
-    background-color: rgba(138, 137, 137, 0.575);
-    text-align: center;
-    margin: 5px 0px;
-}
 
 .navbar_menu {
     display: none;
@@ -134,12 +122,15 @@ header {
 
 .logo:hover {
     filter: grayscale(100%) opacity(70%);
-    transition: .2s;
 }
 
 /*......................................................................center part of header.................................................................*/
-.center_part {
-    margin-top: 110px;
+.center_of_header {
+    height: 39rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .center_part h1 {
@@ -158,16 +149,17 @@ header {
 }
 
 /*.......................................................................button in header......................................................................*/
+
 .btn_first {
-    margin-top: 50px;
-    text-align: center;
+    display: flex;
+    margin-top: 40px;
 }
 
 .btn_one {
     padding: 20px 52px;
     margin: 5px;
     border: none;
-    font-weight: 530;
+    font-weight: 600;
     letter-spacing: 2px;
     cursor: pointer;
 }
@@ -184,7 +176,7 @@ header {
 }
 
 .btn_one.left {
-    color: rgb(12, 12, 12);
+    color: rgb(46, 44, 44);
 }
 
 /*.....................................................................section one.........................................................................*/
@@ -278,6 +270,7 @@ header {
     width: 50%;
     font-size: 80%;
     margin: 20px 0px;
+    line-height: 30px;
 }
 
 .image_part {
@@ -342,6 +335,7 @@ header {
 .section_three_text p {
     font-size: 85%;
     line-height: 30px;
+    color: rgb(139, 139, 139);
 }
 
 .section_three_image {
@@ -411,7 +405,7 @@ header {
 .section_four {
     background-image: linear-gradient(rgba(0, 0, 0, 0.521), rgba(0, 0, 0, 0.521)), url(./img/img_54781236.jpg);
     background-attachment: fixed;
-    background-size: cover;
+    background-size: 100% 100%;
     width: 100%;
     padding: 1px;
 }
@@ -830,6 +824,11 @@ footer {
     background-color: #fafafa;
 }
 
+.subscribe {
+    display: flex;
+    justify-content: flex-end;
+}
+
 form {
     display: flex;
     align-content: center;
@@ -880,10 +879,7 @@ form>button {
 
 }
 
-.subscribe {
-    display: flex;
-    justify-content: flex-end;
-}
+
 
 /*..........................................................*/
 [type="checkbox"] {
@@ -931,15 +927,15 @@ form>button {
     font-size: 80%;
     line-height: 50px;
     width: 250px;
-    height: 95px;
+    height: 6.5rem;
     padding-left: 20px;
     border-radius: 5px;
     font-weight: 300;
     position: fixed;
     left: 0;
     bottom: 50;
-    box-shadow: 2px 2px 10px #a7a8a7a9,
-        -2px -2px 10px #a7a8a7a9;
+    box-shadow: 2px 2px 10px #e5e7e51f,
+        -2px -2px 10px #e5e7e51f;
 }
 
 .fixed_left_part>button {
@@ -950,6 +946,11 @@ form>button {
     letter-spacing: 1px;
     background-color: #45aaf2;
     color: white;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.fixed_left_part>button:hover {
+ background-color: #3f92ce;
 }
 
 .fixed_left_part>h4 {
@@ -966,6 +967,11 @@ form>button {
     position: fixed;
     right: 0;
     bottom: 0;
+    z-index: 1;
+}
+
+.back {
+    transition: 0.5s;
 }
 
 .back:visited {
@@ -974,6 +980,10 @@ form>button {
 
 .back:link {
     color: gray;
+}
+
+.back:hover {
+    color: #149e79;
 }
 
 /*..................................................................media query ........................................................................................*/
@@ -1012,212 +1022,421 @@ form>button {
         width: 50%;
         margin: 10px;
         padding: 30px;
+        font-size: 70%;
+    }
+
+    .button_of_pricing>button {
+        margin: 15px;
+    }
+
+    .subscribe_text {
+        font-size: 70%;
+        line-height: 30px;
+        letter-spacing: 1px;
+        padding: 10px;
+        margin-right: auto;
+    }
+
+    .subscribe_form {
+        padding: 10px;
+        width: 530px;
+        background-color: #fff;
+    }
+
+    .section_six_boxes_content {
+        width: 100%;
+    }
+    .fixed_left_part{
+        display: none;
+    }
+}
+
+@media only screen and (min-width:985px)and (max-width:1024px) {
+    .navbar {
+        width: 100%;
+        height: 70px;
+    }
+
+    .navbar_link {
+        display: none;
+    }
+
+    .navbar_icons {
+        display: none;
+    }
+
+    .logo {
+        width: 180px;
+        height: 40px;
+        cursor: pointer;
+        margin: 13px auto 10px 7%;
+    }
+
+
+    .center_part h1 {
+        font-size: 170%;
+    }
+
+    .center_part h2 {
+        font-size: 80%;
+    }
+
+    .btn_one {
+        padding: 20px 40px;
+        font-size: 60%;
+    }
+
+    .navbar_menu {
+        display: inline-block;
+        margin-right: 60px;
+        font-size: 80%;
+        font-weight: 600;
+        color: #fff;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .navbar_menu>i {
+        margin-right: 10px;
+    }
+
+    .boxes_four {
+        width: 50%;
+        margin: 10px;
+        padding: 30px;
+        font-size: 110%;
+    }
+
+    .texes_of_pricing {
+        padding: 20px;
+        line-height: 40px;
+        font-size: 90%;
+
+    }
+
+    .button_of_pricing>button {
+        margin: 15px;
+    }
+
+    .subscribe_text {
+        font-size: 90%;
+        line-height: 30px;
+        letter-spacing: 1px;
+        padding: 20px;
+        margin-right: auto;
+        margin-left: 30px;
+    }
+
+    .subscribe_form {
+        padding: 10px;
+        width: 530px;
+        background-color: #fff;
+    }
+
+    .section_six_boxes_content {
+        width: 100%;
+    }
+
+    .subscribe_checkbox {
+        font-size: 90%;
+    }
+    .fixed_left_part{
+        display: none;
+    }
+}
+@media only screen and (min-width:844px)and (max-width:985px) {
+    .navbar {
+        width: 100%;
+        height: 70px;
+    }
+
+    .navbar_link {
+        display: none;
+    }
+
+    .navbar_icons {
+        display: none;
+    }
+
+    .logo {
+        width: 180px;
+        height: 40px;
+        cursor: pointer;
+        margin: 13px auto 10px 7%;
+    }
+
+
+    .center_part h1 {
+        font-size: 170%;
+    }
+
+    .center_part h2 {
+        font-size: 80%;
+    }
+
+    .btn_one {
+        padding: 20px 40px;
+        font-size: 60%;
+    }
+
+    .navbar_menu {
+        display: inline-block;
+        margin-right: 60px;
+        font-size: 80%;
+        font-weight: 600;
+        color: #fff;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .navbar_menu>i {
+        margin-right: 10px;
+    }
+    .texes_of_pricing {
+        padding: 30px;
+        line-height: 35px;
+        font-size: 67%;
+    }
+    .fixed_left_part{
+        display: none;
+    }
+    .subscribe_text {
+        font-size: 70%;
+        line-height: 30px;
+        letter-spacing: 1px;
+        padding: 20px;
+        margin-right: auto;
+        margin-left: 30px;
+    }
+
+    .subscribe_form {
+        padding: 10px;
+        width: 490px;
+        background-color: #fff;
+    }
+    .image_part {
+        width: 48%;
+    }
+    .text_part {
+        width: 47%;
+    }
+    .section_six_some_texes {
+        padding-top: 20px;
+        font-weight: 300;
+        text-align: center;
+        font-size: 78%;
+        height: 11rem;
+    }
+    .first_partt i {
+        font-size: 300%;
+        padding: 0px 10px;
+    }
+    
+    .some_texes {
+        font-size: 70%;
+    }
+}
+
+@media only screen and (min-width:425px)and (max-width:844px) {
+    .navbar {
+        width: 100%;
+        height: 70px;
+    }
+
+    .navbar_link {
+        display: none;
+    }
+
+    .navbar_icons {
+        display: none;
+    }
+
+    .logo {
+        width: 180px;
+        height: 40px;
+        cursor: pointer;
+        margin: 13px auto 10px 7%;
+    }
+
+    .navbar_menu {
+        display: inline-block;
+        margin-right: 60px;
+        font-size: 80%;
+        font-weight: 600;
+        color: #fff;
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .navbar_menu>i {
+        margin-right: 10px;
+    }
+
+    .center_part h1 {
+        font-size: 140%;
+        letter-spacing: 4px;
+    }
+
+    .center_part h2 {
+        font-size: 80%;
         font-weight: 400;
-        font-size: 70%;
-        border-radius: 10px;
-        background-color: #f1f2f6;
-        color: rgb(139, 139, 139);
+        letter-spacing: 0px;
     }
 
-    .button_of_pricing>button {
-        margin: 15px;
+    .btn_first {
+        flex-direction: column;
     }
 
-    .subscribe_text {
-        font-size: 70%;
+    /*.......................................................section one ...........................................................................*/
+    .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 93%;
+    }
+
+    .section_one_title {
+        font-size: 90%;
+        line-height: 40px;
+    }
+
+    .section_one_title h2 {
         line-height: 30px;
-        letter-spacing: 1px;
-        padding: 10px;
-        margin-right: auto;
     }
 
-    .subscribe_form {
-        padding: 10px;
-        width: 530px;
-        background-color: #fff;
-    }
-
-    .section_six_boxes_content {
-        width: 100%;
-    }
-}
-
-@media only screen and (min-width:768px)and (max-width:1024px) {
-    .navbar {
-        width: 100%;
-        height: 100px;
-    }
-
-    .navbar_link {
+    /*................................................................section two ..................................................................*/
+    .image_part {
         display: none;
     }
 
-    .navbar_icons {
-        display: none;
-    }
-
-    .logo {
-        width: 200px;
-        cursor: pointer;
-        margin: 25px auto 25px 7%;
-    }
-
-    .center_part {
-        margin-top: 180px;
-    }
-
-    .center_part h1 {
-        font-size: 210%;
-    }
-
-    .center_part h2 {
-        font-size: 100%;
-    }
-
-    .btn_one {
-        padding: 20px 60px;
+    .text_part {
+        width: 100%;
         font-size: 80%;
+        margin: 20px 0px;
     }
 
-    .navbar_menu {
-        display: inline-block;
-        margin-right: 60px;
-        font-size: 80%;
-        font-weight: 600;
-        color: #fff;
-        background: none;
-        border: none;
-        cursor: pointer;
+    .text {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
     }
-    .navbar_menu>i{
-        margin-right: 10px;
+
+    .text img {
+        width: 100px;
+        margin: 20px;
+    }
+
+    .textt {
+        padding: 10px;
+        margin: 10px 10px 10% 10px;
+        text-align: center;
+    }
+
+    .textt h3 {
+        font-size: 130%;
+        margin-bottom: 30px;
+    }
+
+    /*............................................................section three .........................................................................*/
+
+    .section_three_image {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_three_images {
+        width: 40%;
+    }
+
+    /*............................................................section four .........................................................................*/
+    .section_four_text h3 {
+        margin-bottom: 50px;
+        font-weight: 450;
+        letter-spacing: 2px;
+    }
+
+    .section_four_text p {
+        font-size: 75%;
+    }
+
+    .section_four_boxes_first {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .section_four_boxes_second {
+        flex-direction: column;
+        align-items: center;
     }
 
     .boxes_four {
-        width: 50%;
-        margin: 10px;
-        padding: 30px;
-        font-size: 110%;
-    }
-    .texes_of_pricing {
-        padding: 20px;
-        line-height: 30px;
-        font-size:100%;
-        
-    }
-    .button_of_pricing>button {
-        margin: 15px;
+        width: 85%;
     }
 
+    /*............................................................section pricing .........................................................................*/
+    .pricing_section_boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing_section_box {
+        width: 90%;
+    }
+
+    /*............................................................section subscribt .........................................................................*/
+    .subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
     .subscribe_text {
-        font-size: 90%;
-        line-height: 30px;
-        letter-spacing: 1px;
-        padding: 20px;
-        margin-right: auto;
-        margin-left: 30px;
+       text-align: center;
+        margin: 30px 0px;
     }
-
-    .subscribe_form {
-        padding: 10px;
-        width: 530px;
-        background-color: #fff;
+    /*............................................................ section six .........................................................................*/
+    .section_six_boxes {
+        flex-direction: column;
+        align-items: center;
     }
-
     .section_six_boxes_content {
+        width: 650px;
+    }
+    .section_six_text h3 {
+        margin-bottom: 35px;
+    }
+    
+    .section_six_text p {
+        font-size: 75%;
+    }
+    /*............................................................footer part .........................................................................*/
+    .first_part {
+       flex-direction: column;
+       align-items: center;
+    }
+    .first_partt {
+      
         width: 100%;
+        height: 17rem;
+        text-align: center;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
     }
-    .subscribe_checkbox {
-        font-size: 90%;
+    .second_part_center_images h2 {
+        line-height: 70px;
+        font-size: 130%;
     }
-}
-@media only screen and (min-width:425px)and (max-width:768px){
-    .navbar {
+    
+    .second_part_center_images img {
         width: 100%;
-        height: 200px;
+        height: 10rem;
     }
-
-    .navbar_link {
+    /*...................................................................fixed part...............................................................*/
+    .fixed_left_part{
         display: none;
-    }
-
-    .navbar_icons {
-        display: none;
-    }
-
-    .logo {
-        width: 700px;
-        cursor: pointer;
-        margin: 25px auto 25px 7%;
-    }
-
-    .center_part {
-        margin-top: 180px;
-    }
-
-    .center_part h1 {
-        font-size: 210%;
-    }
-
-    .center_part h2 {
-        font-size: 100%;
-    }
-
-    .btn_one {
-        padding: 20px 60px;
-        font-size: 80%;
-    }
-
-    .navbar_menu {
-        display: inline-block;
-        margin-right: 60px;
-        font-size: 120%;
-        font-weight: 600;
-        color: #fff;
-        background: none;
-        border: none;
-        cursor: pointer;
-        background-color: aqua;
-    }
-    .navbar_menu>i{
-        margin-right: 10px;
-    }
-
-    .boxes_four {
-        width: 50%;
-        margin: 10px;
-        padding: 30px;
-        font-size: 110%;
-    }
-    .texes_of_pricing {
-        padding: 20px;
-        line-height: 30px;
-        font-size:100%;
-        
-    }
-    .button_of_pricing>button {
-        margin: 15px;
-    }
-
-    .subscribe_text {
-        font-size: 90%;
-        line-height: 30px;
-        letter-spacing: 1px;
-        padding: 20px;
-        margin-right: auto;
-        margin-left: 30px;
-    }
-
-    .subscribe_form {
-        padding: 10px;
-        width: 530px;
-        background-color: #fff;
-    }
-
-    .section_six_boxes_content {
-        width: 100%;
-    }
-    .subscribe_checkbox {
-        font-size: 90%;
     }
 }
