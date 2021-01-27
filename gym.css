@@ -497,58 +497,61 @@ header {
 .section_six_boxes_content {
     border: 1px solid rgb(216, 215, 215);
     margin: 10px;
-    width: 800px;
+    width: 33%;
     height: 28rem;
-}
+  }
 
-.images {
+  .images {
+    padding: 0.3px;
     height: 14rem;
     transition: 0.5;
     position: relative;
-}
+  }
 
-.section_six_boxes_content_images {
-    transition: 0.5s;
-}
-
-.section_six_boxes_content_images:hover {
-    opacity: 0.8;
-}
-
-.section_six_boxes_content img {
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-}
-
-
-/* .images:hover {
-    background-color: rgba(2, 2, 2, 0.767);
+    transition: background 0.5s ease;
     transition: 0.5s;
-}
+  }
 
-.images:hover #button_inside_image {
-    display: inline-block;
-}
-.images:hover #button_inside_image:hover {
-    background: white;
-    color: rgb(20, 20, 20);
-    transition: 0.5s;
-} 
-#button_inside_image {
+  .images:hover .overlay {
+    background: rgba(0, 0, 0, .3);
+  }
+
+  .button {
     position: absolute;
-    left: 50%;
-    bottom: 30%;
-    transform: translate(-50%, -50%);
-    padding: 10px 40px;
+    width: 500px;
+    left: 117px;
+    top: 100px;
+    opacity: 0;
+    transition: opacity .35s ease;
+    font-size: 70%;
+    font-weight: 700;
+  }
+
+  .images:hover .button{
+    opacity: 1;
+  }
+
+  .button a {
+    width: 200px;
+    padding: 7px 40px;
+    text-decoration: none;
+    color: white;
+    border: solid 2px white;
     border-radius: 50px;
-    color: #fff;
-    background: none;
-    font-size: 65%;
-    font-weight: 600;
-    border: 1px solid #fff;
+    z-index: 1;
     transition: 0.5s;
-    display: none;
-}*/
+  }
+
+  .button a:hover{
+    background-color: white;
+    color: black;
+  }
 
 .section_six_some_texes {
     padding-top: 20px;
