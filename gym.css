@@ -37,6 +37,7 @@ header {
     align-content: center;
     flex-wrap: nowrap;
     border-bottom: 1px solid gray;
+    position: fixed;
 }
 
 
@@ -525,8 +526,9 @@ header {
   .button {
     position: absolute;
     width: 500px;
-    left: 117px;
-    top: 100px;
+    left:50%;
+    top: 50%;
+    transform: translate(-15%,-15%);
     opacity: 0;
     transition: opacity .35s ease;
     font-size: 70%;
@@ -851,6 +853,11 @@ form>button {
     background-color: #149e79;
     color: #fff;
     cursor: pointer;
+    transition: 0.5s;
+}
+
+form>button:hover{
+    background-color: #148063;
 }
 
 .subscribe_text {
