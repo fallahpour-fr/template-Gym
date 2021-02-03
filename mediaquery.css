@@ -1,4 +1,8 @@
 @media only screen and (min-width:1024px)and (max-width:1440px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .navbar_icons a {
         padding: 8px 10px;
         margin: 0px;
@@ -57,12 +61,17 @@
     .section_six_boxes_content {
         width: 100%;
     }
-    .fixed_left_part{
+
+    .fixed_left_part {
         display: none;
     }
 }
 
 @media only screen and (min-width:985px)and (max-width:1024px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .navbar {
         width: 100%;
         height: 70px;
@@ -152,11 +161,17 @@
     .subscribe_checkbox {
         font-size: 90%;
     }
-    .fixed_left_part{
+
+    .fixed_left_part {
         display: none;
     }
 }
-@media only screen and (min-width:844px)and (max-width:985px) {
+
+@media only screen and (min-width:768px)and (max-width:985px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .navbar {
         width: 100%;
         height: 70px;
@@ -205,14 +220,17 @@
     .navbar_menu>i {
         margin-right: 10px;
     }
+
     .texes_of_pricing {
         padding: 30px;
         line-height: 35px;
         font-size: 67%;
     }
-    .fixed_left_part{
+
+    .fixed_left_part {
         display: none;
     }
+
     .subscribe_text {
         font-size: 70%;
         line-height: 30px;
@@ -227,12 +245,15 @@
         width: 490px;
         background-color: #fff;
     }
+
     .image_part {
         width: 48%;
     }
+
     .text_part {
         width: 47%;
     }
+
     .section_six_some_texes {
         padding-top: 20px;
         font-weight: 300;
@@ -240,17 +261,22 @@
         font-size: 78%;
         height: 11rem;
     }
+
     .first_partt i {
         font-size: 300%;
         padding: 0px 10px;
     }
-    
+
     .some_texes {
         font-size: 70%;
     }
 }
 
-@media only screen and (min-width:425px)and (max-width:844px) {
+@media only screen and (min-width:425px)and (max-width:768px) {
+    body {
+        overflow-x: hidden;
+    }
+
     .navbar {
         width: 100%;
         height: 70px;
@@ -364,6 +390,16 @@
         width: 40%;
     }
 
+    .section_three_text h3 {
+        margin-bottom: 50px;
+        font-weight: 450;
+        letter-spacing: 2px;
+    }
+
+    .section_three_text p {
+        font-size: 60%;
+    }
+
     /*............................................................section four .........................................................................*/
     .section_four_text h3 {
         margin-bottom: 50px;
@@ -404,32 +440,43 @@
         flex-direction: column;
         align-items: center;
     }
+
     .subscribe_text {
-       text-align: center;
+        text-align: center;
         margin: 30px 0px;
     }
+
     /*............................................................ section six .........................................................................*/
     .section_six_boxes {
         flex-direction: column;
         align-items: center;
     }
+
     .section_six_boxes_content {
-        width: 650px;
+        width: 500px;
+        height: 30rem;
     }
+
+    .images {
+        height: 16rem;
+    }
+
     .section_six_text h3 {
         margin-bottom: 35px;
     }
-    
+
     .section_six_text p {
         font-size: 75%;
     }
+
     /*............................................................footer part .........................................................................*/
     .first_part {
-       flex-direction: column;
-       align-items: center;
+        flex-direction: column;
+        align-items: center;
     }
+
     .first_partt {
-      
+
         width: 100%;
         height: 17rem;
         text-align: center;
@@ -437,17 +484,19 @@
         align-items: center;
         justify-content: center;
     }
+
     .second_part_center_images h2 {
         line-height: 70px;
         font-size: 130%;
     }
-    
+
     .second_part_center_images img {
         width: 100%;
         height: 10rem;
     }
+
     /*...................................................................fixed part...............................................................*/
-    .fixed_left_part{
+    .fixed_left_part {
         display: none;
     }
 }
