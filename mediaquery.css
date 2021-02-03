@@ -408,10 +408,11 @@
         margin-bottom: 50px;
         font-weight: 450;
         letter-spacing: 2px;
+        font-size: 80%;
     }
 
     .section_four_text p {
-        font-size: 75%;
+        font-size: 80%;
     }
 
     .section_four_boxes_first {
@@ -426,6 +427,7 @@
 
     .boxes_four {
         width: 85%;
+        font-size: 70%;
     }
 
     /*............................................................section pricing .........................................................................*/

@@ -506,7 +506,7 @@ header {
 .section_six_boxes_content {
     border: 1px solid rgb(216, 215, 215);
     margin: 10px;
-    width: 35%;
+    width: 30%;
     height: 28rem;
 }
 
@@ -879,7 +879,7 @@ form>button:hover {
 
 .subscribe_form {
     padding: 10px;
-    width: 570px;
+    width: 423px;
     background-color: #fff;
 }
 
